@@ -16,7 +16,7 @@
   text-align: center;
   color: #fff;
   background: rgba(0, 0, 0, 0.6);
-  height: 230px;
+  height: 200px;
   padding: 0 60px;
 }
 
@@ -33,8 +33,9 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-  background-size: cover;
+  filter: brightness(0.5);
+  /* giảm kích thước ảnh */
+  background-size: 50% 50%;
 }
 
 .hero-content {
@@ -76,6 +77,8 @@
   flex: 1;
   padding: 20px;
   color: #4d4d4d;
+  font-family: "FontAwesome5Free-Solid", sans-serif;
+  text-align: left;
 }
 
 .company-name {
@@ -90,10 +93,36 @@
 .contact-title {
   font-weight: 700;
   margin-top: 20px;
+  /* khoảng cách từ icon đến text */
+  background-size: 20px; /* kích thước của icon */
+
 }
 
-.contact-info {
+.location-icon2 {
+  background: url('../../assets/icons/location.png') no-repeat left center;
+  background-size: 20px;
+
+}
+
+.phone-icon2 {
+  background: url('../../assets/icons/dienthoai.png') no-repeat left center;
+  background-size: 20px;
+}
+
+.hotline-icon2 {
+  background: url('../../assets/icons/hotline.png') no-repeat left center;
+  background-size: 20px;
+}
+
+.email-icon2 {
+  background: url('../../assets/icons/email.png') no-repeat left center;
+  background-size: 20px;
+}
+
+.contact-info2 {
   margin-top: 10px;
+  padding-left: 30px; /* khoảng cách từ icon đến text */
+  background-size: 20px; /* kích thước của icon */
 }
 
 .contact-image {
@@ -107,7 +136,8 @@
 .contact-img {
   width: 100%;
   max-width: 500px;
-  height: auto;
+  height: 100%;
+  padding: 0 20px;
 }
 
 .contact-form-section {
@@ -116,21 +146,32 @@
   margin-top: 72px;
   left: 46%;
   bottom: calc(128 / 1920 * 100%);
+  color: #4d4d4d;
+  text-align: center;
+  font-family: "Roboto-CondensedBlack", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .form-title {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
+  font-family: "Roboto-CondensedBlack", sans-serif;
+  font-weight: 800;
   color: #4d4d4d;
   left: 46%;
 }
 
 .form-subtitle {
   margin-top: 14px;
-  font-size: 16px;
+  font-size: 14px;
   color: #4d4d4d;
   text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  line-height: 23px;
+  font-weight: 500;
 }
 
 .contact-form {
@@ -144,6 +185,8 @@
 .input-field,
 .textarea-field {
   border: 1px solid rgba(217, 217, 217, 1);
+  font-family: "Roboto-Regular", sans-serif;
+
   border-radius: 5px;
   margin-top: 16px;
   padding: 12px 16px;
@@ -153,11 +196,14 @@
 
 .textarea-field {
   padding-bottom: 66px;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 .submit-button {
   border-radius: 5px;
-  background-color: #006ce7;
   color: #fff;
   text-align: center;
   padding: 12px 0;
@@ -167,5 +213,7 @@
   height: 40px;
   position: absolute;
   margin-top: 400px;
+  background: #006ce7;
+  border: none;
 
 }

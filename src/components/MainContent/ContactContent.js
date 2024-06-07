@@ -1,9 +1,9 @@
 import * as React from "react";
 import "./ContactContent.css"
 
-function ContactDetails({title, details}) {
+function ContactDetails({title, details, icon}) {
   return (
-      <div className="contact-details">
+      <div className={`contact-details ${icon}`}>
         <div className="contact-title">{title}</div>
         <div className="contact-info">{details}</div>
       </div>
@@ -14,11 +14,12 @@ function Content() {
   const contactInfo = [
     {
       title: "Trụ sở chính",
-      details: "Tầng 4, Tòa nhà Sông Đà 9, Số 2 Nguyễn Hoàng, Mỹ Đình, Nam Từ Liêm, Hà Nội"
+      details: "Tầng 4, Tòa nhà Sông Đà 9, Số 2 Nguyễn Hoàng, Mỹ Đình, Nam Từ Liêm, Hà Nội",
+      icon: "../../assets/icons/location.png" // thêm đường dẫn tới icon tương ứng
     },
-    {title: "Điện thoại", details: "024 22 33 55 66"},
-    {title: "Hotline", details: "0986 893 233"},
-    {title: "Email", details: "contact@amitech.vn"},
+    {title: "Điện thoại", details: "024 22 33 55 66", icon: "dienthoai.png"},
+    {title: "Hotline", details: "0986 893 233", icon: "hotline.png"},
+    {title: "Email", details: "contact@amitech.vn", icon: "email.png"},
   ];
 
   return (
