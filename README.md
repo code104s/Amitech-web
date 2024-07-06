@@ -1,3 +1,4 @@
+[![Board Status](https://dev.azure.com/yanynguyen/27417894-0f29-4c1b-9846-9bc625d2d32a/4f2b5028-387e-4e81-94f8-eebd58b26a6c/_apis/work/boardbadge/0686a8e4-adb3-4735-a2ed-60552ed56df0)](https://dev.azure.com/yanynguyen/27417894-0f29-4c1b-9846-9bc625d2d32a/_boards/board/t/4f2b5028-387e-4e81-94f8-eebd58b26a6c/Microsoft.RequirementCategory)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
